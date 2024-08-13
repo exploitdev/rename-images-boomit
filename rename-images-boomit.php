@@ -11,12 +11,13 @@ add_action('admin_menu', 'rip_add_settings_page');
 add_action('admin_init', 'rip_register_settings');
 
 function rip_add_settings_page() {
-    add_options_page(
+    add_menu_page(
         'Rename Images Settings',
         'Rename Images',
         'manage_options',
         'rip-settings',
-        'rip_settings_page_callback'
+        'rip_settings_page_callback',
+        'dashicons-palmtree'
     );
 }
 
