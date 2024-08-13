@@ -12,7 +12,7 @@ add_action('admin_init', 'rip_register_settings');
 
 function rip_add_settings_page() {
     add_menu_page(
-        'Rename Images Settings',
+        'BoomIT Rename Images Settings',
         'Rename Images',
         'manage_options',
         'rip-settings',
