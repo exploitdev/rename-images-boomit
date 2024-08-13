@@ -6,6 +6,15 @@ Version: 1.0.6
 Author: Jackson Green
 */
 
+require 'plugin-update-checker/plugin-update-checker.php';
+
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/exploitdev/rename-images-boomit/',
+    __FILE__,
+    'rename-images-plugin'
+);
+
+
 // Add settings page
 add_action('admin_menu', 'rip_add_settings_page');
 add_action('admin_init', 'rip_register_settings');
